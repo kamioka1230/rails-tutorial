@@ -4,6 +4,7 @@ ruby '2.6.3'
 
 gem 'rails', '6.0.1'
 gem 'bootstrap-sass'
+gem 'bcrypt'
 gem 'puma'
 gem 'sass-rails', '>= 6'
 gem 'uglifier', '3.2.0'
