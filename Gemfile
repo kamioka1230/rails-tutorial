@@ -7,6 +7,8 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'puma'
 gem 'webpacker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'sass-rails', '>= 6'
 gem 'uglifier', '3.2.0'
 gem 'coffee-rails', '4.2.2'
@@ -18,6 +20,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'faker'
 end
 
 group :development do
