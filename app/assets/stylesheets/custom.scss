@@ -10,7 +10,6 @@ $gray-medium-light: #eaeaea;
 }
 
 body {
-  padding-top: 60px;
 }
 
 section {
@@ -123,6 +122,9 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 4px;
 }
 
 .gravatar_edit {
@@ -166,6 +168,42 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* cover */
+.navbar-transparent {
+  background-color: transparent;
+  border: none;
+  a {
+    color: #fff;
+  }
+}
+.header-cover {
+  margin-top: -20px;
+  min-height: 65vh;
+  max-height: 700px;
+  background-image: url('rihanna_cover.jpg');
+  background-color: #b2afab;
+  
+  background-position: 50%;
+  background-size: cover;
+  /*min-height: 100vh;*/
+  /*max-height: 999px;*/
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.header-cover .filter:after {
+  background-color: rgba(0,0,0,.5);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 /* miscellaneous */
