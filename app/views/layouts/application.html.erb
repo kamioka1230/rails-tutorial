@@ -10,13 +10,13 @@
     <%= render 'layouts/shim' %>
   </head>
 
-  <% if !@user.nil? && current_page?(user_path(@user)) %>
+  <% if !@user.nil? && !@user.id.nil? && current_page?(user_path(@user)) %>
   <body >
   <% else %>
   <body style="padding-top:60px;">
   <% end %>
     <%= render 'layouts/header' %>
-    <% if !@user.nil? && current_page?(user_path(@user)) %>
+    <% if !@user.nil? && !@user.id.nil? && current_page?(user_path(@user)) %>
       <div class="header-cover"><<div class="filter"></div></div>
     <% end %>
     <div class="container">

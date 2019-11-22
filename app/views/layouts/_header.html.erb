@@ -1,4 +1,4 @@
-<% if !@user.nil? && current_page?(user_path(@user)) %>
+<% if !@user.nil? && !@user.id.nil? && current_page?(user_path(@user)) %>
 <header class="navbar navbar-fixed-top navbar-transparent">
 <% else %>
 <header class="navbar navbar-fixed-top navbar-inverse">
